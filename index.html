@@ -5,118 +5,157 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Clicon</title>
 		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<header class="header">
-			<div class="header__container">
-				<div class="header__top">
-					<p class="header__welcome text">
-						Welcome to Clicon online eCommerce store.
-					</p>
-					<div class="header__socials">
-						<p class="header__follow text">Follow us:</p>
-						<ul class="header__socials-list">
-							<li class="socials-item">
-								<a href="#" class="socials-link">
-									<img src="twitter.png" alt="Twitter" class="socials-icon" />
-								</a>
-							</li>
-							<li class="socials-item">
-								<a href="#" class="socials-link">
-									<img src="facebook.png" alt="Facebook" class="socials-icon" />
-								</a>
-							</li>
-							<li class="socials-item">
-								<a href="#" class="socials-link">
-									<img
-										src="pinterest.png"
-										alt="Pinterest"
-										class="socials-icon"
-									/>
-								</a>
-							</li>
-							<li class="socials-item">
-								<a href="#" class="socials-link">
-									<img src="reddit.png" alt="Reddit" class="socials-icon" />
-								</a>
-							</li>
-							<li class="socials-item">
-								<a href="#" class="socials-link">
-									<img src="youtube.png" alt="YouTube" class="socials-iconx" />
-								</a>
-							</li>
-							<li class="socials-item">
-								<a href="#" class="socials-link">
-									<img
-										src="instagram.png"
-										alt="Instagram"
-										class="socials-icon"
-									/>
-								</a>
-							</li>
-						</ul>
-						<span class="header__splitter"></span>
-						<div class="header__select">
-							<select name="Eng" id="" class="select__lang">
-								<option
-									value=""
-									class="select__lang-option select__lang-en"
-								></option>
-								<option
-									value=""
-									class="select__lang-option select__lang-ru"
-								></option>
+			<div class="blue-bg">
+				<div class="header__navigation container">
+					<div class="header__top-nav">
+						<p class="header__welcome text">
+							Welcome to Clicon online eCommerce store.
+						</p>
+						<div class="header__top-right">
+							<div class="header__follow-us">
+								<p class="header__follow text">Follow us:</p>
+								<ul class="header__socials-list">
+									<li class="header__socials-item">
+										<a href="#" class="header__socials-link">
+											<img
+												src="./img/twitter.svg"
+												alt="Twitter"
+												class="socials-icon"
+											/>
+										</a>
+									</li>
+									<li class="header__socials-item">
+										<a href="#" class="socials-link">
+											<img
+												src="./img/facebook.svg"
+												alt="Facebook"
+												class="socials-icon"
+											/>
+										</a>
+									</li>
+									<li class="header__socials-item">
+										<a href="#" class="socials-link">
+											<img
+												src="./img/pinterest.svg"
+												alt="Pinterest"
+												class="socials-icon"
+											/>
+										</a>
+									</li>
+									<li class="header__socials-item">
+										<a href="#" class="socials-link">
+											<img
+												src="./img/reddit.svg"
+												alt="Reddit"
+												class="socials-icon"
+											/>
+										</a>
+									</li>
+									<li class="header__socials-item">
+										<a href="#" class="socials-link">
+											<img
+												src="./img/youtube.svg"
+												alt="YouTube"
+												class="socials-icon"
+											/>
+										</a>
+									</li>
+									<li class="header__socials-item">
+										<a href="#" class="socials-link">
+											<img
+												src="./img/instagram.svg"
+												alt="Instagram"
+												class="socials-icon"
+											/>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<span class="header__splitter"></span>
+							<select name="lang" id="" class="header__select text">
+								<option value="Eng" class="header__select-option" selected>
+									Eng
+								</option>
+								<option value="" class="header__select-option">Rus</option>
 							</select>
-							<select name="USD" id="" class="select__currency">
-								<option
-									value=""
-									class="select__currency-option select__currency-usd"
-								></option>
-								<option
-									value=""
-									class="select__currency-option select__currency-rub"
-								></option>
+							<select name="currency" id="" class="header__select text">
+								<option value="USD" class="header__select-option" selected>
+									USD
+								</option>
+								<option value="RUB" class="header__select-option">RUB</option>
 							</select>
 						</div>
 					</div>
-				</div>
-				<div class="header__search">
-					<a href="#" class="header__logo">
-						<img src="logo.png" alt="Clicon Logo" class="logo" />
-					</a>
-					<input type="text" name="" id="" class="header__input input" />
-					<div class="header__actions">
-						<button type="submit" class="header__cart">
-							<img src="cart.png" alt="Shopping Cart" class="cart" />
-						</button>
-						<button type="submit" class="header__likes">
-							<img src="heart.png" alt="Likes" class="likes" />
-						</button>
-						<button type="submit" class="header__profile">
-							<img src="profile.png" alt="User Profile" class="profile" />
-						</button>
+					<div class="header__middle-nav">
+						<div class="header__middle-left">
+							<a href="#" class="header__logo">
+								<img src="img/logo.svg" alt="Clicon Logo" class="logo" />
+							</a>
+							<h1 class="header__title">CLICON</h1>
+						</div>
+						<input
+							type="text"
+							placeholder="Search for anything..."
+							name=""
+							id=""
+							class="header__input input"
+						/>
+						<div class="header__actions">
+							<button type="submit" class="header__action">
+								<img
+									src="./img/cart.svg"
+									alt="Shopping Cart"
+									class="header__action-icon"
+								/>
+							</button>
+							<button type="submit" class="header__action">
+								<img
+									src="./img/like.svg"
+									alt="Likes"
+									class="header__action-icon"
+								/>
+							</button>
+							<button type="submit" class="header__action">
+								<img
+									src="./img/profile.svg"
+									alt="User Profile"
+									class="header__action-icon"
+								/>
+							</button>
+						</div>
 					</div>
 				</div>
-				<div class="header__menu">
-					<div class="header__menu-actions">
+			</div>
+			<div class="container">
+				<div class="header__bottom-nav">
+					<div class="header__menu">
 						<select
 							name="All Category"
 							id=""
 							class="header__categories"
 						></select>
 						<nav class="header__nav">
-							<ul class="nav__list">
-								<li class="nav__item">
-									<a href="#" class="nav__link">Track Order</a>
+							<ul class="header__nav-list">
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Track Order</a>
 								</li>
-								<li class="nav__item">
-									<a href="#" class="nav__link">Compare</a>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Compare</a>
 								</li>
-								<li class="nav__item">
-									<a href="#" class="nav__link">Customer Support</a>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Customer Support</a>
 								</li>
-								<li class="nav__item">
-									<a href="#" class="nav__link">Need Help</a>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Need Help</a>
 								</li>
 							</ul>
 						</nav>

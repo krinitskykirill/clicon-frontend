@@ -1,43 +1,13 @@
-html {
-	font-size: calc(100vw / 1920 * 10);
-}
+//Global styles and utils
+@import '_reset';
+@import '_mixins';
+@import '_fonts';
+@import '_utils';
+@import '_variables';
+@import '_global';
 
-body {
-	width: 192rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0;
-}
+//Components
+@import './components/input';
 
-.text {
-	font-family: 'Public Sans';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1.6rem;
-	color: #ffffff;
-}
-
-.header {
-	background-color: #1b6392;
-
-	width: 192rem;
-
-	&__container {
-		width: 132rem;
-		height: 8rem;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	&__top {
-		height: 5.2rem;
-
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-}
+// Sections
+@import './sections/_header';

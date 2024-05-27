@@ -1,0 +1,79 @@
+.header {
+	height: 22rem;
+	@include col-al-jc-center;
+
+	&__navigation {
+		@include column-align-sb;
+	}
+	&__top-nav {
+		height: 5.2rem;
+		@include row-al-center-jc-sb;
+	}
+	&__top-right {
+		width: 39.6rem;
+		@include row-al-center-jc-sb;
+	}
+	&__follow-us {
+		width: 23.3rem;
+		@include row-al-center-jc-sb;
+	}
+	&__socials-list {
+		width: 15.6rem;
+		@include row-al-center-jc-sb;
+	}
+	&__splitter {
+		width: 0.1rem;
+		height: 2.8rem;
+		background-color: white;
+		opacity: 0.16;
+	}
+	&__select {
+		width: 4.7rem;
+		background-image: url('./../../img/dropdown.svg');
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-size: 1.2rem 1.2rem;
+	}
+	&__middle-nav {
+		height: 8.8rem;
+		@include row-al-center-jc-sb;
+	}
+	&__middle-left {
+		width: 17.7rem;
+		@include row-al-center-jc-sb;
+	}
+	&__logo {
+		width: 4.8rem;
+		height: 4.8rem;
+	}
+	&__title {
+		@include heading-700;
+	}
+	&__input {
+		width: 64.6rem;
+		height: 4.8rem;
+		padding: 1.4rem 2rem 1.4rem 2rem;
+		background-image: url('./../../img/search.svg');
+		background-repeat: no-repeat;
+		background-position: calc(100% - 2rem) center;
+		background-size: 2rem 2rem;
+	}
+	&__actions {
+		width: 14.4rem;
+		@include row-al-center-jc-sb;
+	}
+	&__action-icon {
+		width: 3.2rem;
+		height: 3.2rem;
+	}
+	&__bottom-nav {
+		height: 8rem;
+		@include row-al-center-jc-sb;
+	}
+	&__menu {
+		@include row-al-center-jc-sb;
+	}
+	&__nav-list {
+		@include row-al-center-jc-sb;
+	}
+}

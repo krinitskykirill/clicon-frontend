@@ -1,0 +1,11 @@
+.input {
+	border-radius: 0.2rem;
+	box-shadow: 0px 0.8rem 3.2rem 0px rgba(0, 0, 0, 0.08);
+	background: white;
+
+	@include body-small-400(#191c1f);
+
+	&::placeholder {
+		@include body-small-400(#77878f);
+	}
+}
